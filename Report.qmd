@@ -12,6 +12,7 @@ execute:
   warning: false
   message: false
 ---
+
 ```{r}
 #| label: setup
 #| include: false
@@ -29,7 +30,7 @@ unicef_indicator_2 <- read_csv("C:/Users/DELL/Downloads/unicef_indicator_2.csv")
 *Imagine a world where every child, no matter where they are born, has a plate brimming with colorful, nourishing food. A world where laughter echoes from playgrounds, fueled by the energy of healthy bodies and curious minds. Sadly, this is not the reality for millions of children around the globe. Their plates remain empty, their bellies ache with hunger, and their futures are dimmed by the shadow of malnutrition. This is their story, a tale of two plates: one overflowing with abundance, the other barren and echoing with emptiness.*
 
 ## A World Divided: Mapping the Fault Lines of Hunger
-      
+
 ```{r}
 #| fig-cap: "Figure 1:This global map vividly illustrates the prevalence of child malnutrition across the globe. The gradient from red to orange represents the Child Malnutrition Index, where darker shades of red indicate higher levels of malnutrition. This stark visual representation underscores the urgent need for more effective nutritional interventions, particularly in regions marked by the deepest shades of red. The map serves as a stark reminder that child malnutrition remains a pressing issue, requiring concerted global efforts and strategies to ensure every child has access to nutritious food and a healthy start in life."
 map_world <- map_data("world")
@@ -136,7 +137,6 @@ plot_ly(filtered_data, x = ~time_period, y = ~obs_value, color = ~country, type 
 ```
 
 Let's shine a light on a particularly vulnerable group: young girls. **(Refer to Figure 5: Average Female Child Malnutrition Rate by Country and Time Period)** The bars on the chart tell a story of persistent gender inequality, where societal norms and cultural practices often leave girls with less access to food, education, and healthcare. In many communities, girls are the last to eat, the first to be pulled out of school, and the least likely to receive medical attention. This disparity underscores the urgency of addressing the root causes of gender inequality to ensure that every child, regardless of their gender, has the opportunity to thrive. Empowering girls through education, promoting gender-sensitive policies, and dismantling harmful cultural norms are crucial steps in breaking the cycle of malnutrition.
-
 
 ## A Call to Action: Rewriting the Narrative
 
